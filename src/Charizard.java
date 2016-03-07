@@ -1,4 +1,11 @@
 
-public class Charizard {
+public class Charizard extends Fire {
+
+  
+  
+  public Charizard()
+  {
+    
+  }
 
 }
