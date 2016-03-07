@@ -1,0 +1,9 @@
+public class Ampharos extends Pokemon{
+
+public Ampharos()
+{
+}
+
+
+
+}
