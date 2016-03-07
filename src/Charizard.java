@@ -1,5 +1,5 @@
 
-public class Charizard extends Fire {
+public class Charizard extends Pokemon {
 
   
   
