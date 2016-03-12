@@ -1,5 +1,5 @@
 
-public class Pokemon {
+public class Pokemon implements Boardable{
 private String name;
 private double weight;
 private String id;
