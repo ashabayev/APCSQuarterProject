@@ -1,15 +1,26 @@
 
 public class Pokemon implements Boardable{
-private String name;
+private String name, ownerName, ownerEmail;
+
+
 private double weight;
 private String id;
 private int hp;
 
-public Pokemon()
+public Pokemon(String name, String ownerName, String ownerEmail, String id, double Weight, int hp)
 {
   
 }
+//setters and getters
 
+public String getOwnerEmail() {
+	return ownerEmail;
+}
+
+
+public void setOwnerEmail(String ownerEmail) throws IllegalEmailException{
+	this.ownerEmail = ownerEmail;
+}
 
 public void setName(String namer)
 {
