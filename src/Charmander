@@ -1,6 +1,18 @@
 public class Charmander extends Pokemon{
 
+private double flameStrength;
+
 public Charmander()
 {
+}
+
+public void setFlame(double strength)
+{
+flameStrength = strength;
+}
+
+public double getFlame()
+{
+return flameStrength;
 }
 }
