@@ -1,6 +1,0 @@
-public class Mareep extends Pokemon
-{
-public Mareep()
-{
-}
-}
