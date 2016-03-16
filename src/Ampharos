@@ -1,8 +1,21 @@
 public class Ampharos extends Pokemon{
 
+private booleean isLighthouse
+
 public Ampharos()
 {
 }
+
+public void setLighthouse(boolean yes)
+{
+isLighthouse = yes;
+}
+
+public boolean getLighthouse()
+{
+return isLighthouse;
+}
+
 
 
 
