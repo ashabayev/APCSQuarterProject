@@ -9,6 +9,11 @@ private int hp;
 
 public Pokemon(String name, String ownerName, String ownerEmail, String id, double Weight, int hp)
 {
+  setOwnerEmail(ownerEmail);
+  setName(name);
+  setWeight(Weight);
+  setID(id);
+  setHp(hp);
   
 }
 //setters and getters
@@ -32,7 +37,7 @@ public void setWeight(double weighty)
   weight = weighty;
 }
 
-public void setID(String ego)
+public void setID(String ego) throws IDException
 {
   id = ego;
 }
@@ -45,13 +50,17 @@ public double getWeight()
 {
   return weight;
 }
-public String id()
+public String getid()
 {
   return id;
 }
 
 public int getHp() {
 	return hp;
+}
+public void setHp(int HP)
+{
+	hp = HP;
 }
 
 public String toString()
