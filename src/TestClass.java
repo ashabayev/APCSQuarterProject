@@ -1,7 +1,10 @@
-
+import java.io.FileNotFoundException;
 
 public class TestClass {
 	
+	public static void main(String[] args) throws FileNotFoundException {
+		//PokemonCenter pc = PokemonCenter...
+	}
 	
 public void intro(){
 		System.out.println("#############################################################################################################");
@@ -13,5 +16,7 @@ public void intro(){
 		System.out.println("You will also now return here if all your Pokémon faint at once! ");
 		System.out.println("We hope to see you again soon. ");
 		System.out.println("");
+		
+		pokemonCenter.getListOfPokemon().get(0).setBoardingDate("2005/8/25");
 }
 }

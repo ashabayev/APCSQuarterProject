@@ -4,8 +4,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class pokemonCenter{
+	//private static pokemonCenter...
+	
 	public static void main(String[] args) throws IOException	
 {
+		//private ArrayList<Pokemon>...
 	String fileName = "pokemonData.dat";
 	try
 	{
@@ -47,4 +50,7 @@ public class pokemonCenter{
 	void printPokemonBoarding(int   month, int day, year); 
 */
 }
+
+	
+	
 }

@@ -1,11 +1,21 @@
-
+import java.util.Calendar;
 public class Pokemon implements Boardable{
-private String name, ownerName, ownerEmail;
 
-
+	private String name, ownerName, ownerEmail;
 private double weight;
 private String id;
 private int hp;
+//private Date boardStart, boardEnd;
+
+public Pokemon()
+{
+	name = "Omar";
+	ownerName = "Omar";
+	ownerEmail = "oaldawud@imsa.edu";
+	weight = 0;
+	id = null;
+	hp = 0;
+}
 
 public Pokemon(String name, String ownerName, String ownerEmail, String id, double Weight, int hp)
 {
@@ -58,6 +68,7 @@ public String getid()
 public int getHp() {
 	return hp;
 }
+
 public void setHp(int HP)
 {
 	hp = HP;
