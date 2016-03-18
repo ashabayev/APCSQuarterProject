@@ -33,6 +33,22 @@ public String getOwnerEmail() {
 }
 
 
+public String getOwnerName() {
+	return ownerName;
+}
+
+public void setOwnerName(String ownerName) {
+	this.ownerName = ownerName;
+}
+
+public String getId() {
+	return id;
+}
+
+public void setId(String id) {
+	this.id = id;
+}
+
 public void setOwnerEmail(String ownerEmail) throws IllegalEmailException{
 	this.ownerEmail = ownerEmail;
 }
