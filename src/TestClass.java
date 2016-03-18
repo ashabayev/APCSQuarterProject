@@ -6,9 +6,26 @@ public class TestClass {
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		//PokemonCenter pc = PokemonCenter...
+		intro();
+		
+		try {
+			p1 = new Charizard("Char", "Mike", "mrgiggles@yahoo.com", "77986", 67, 6);
+		} catch (IllegalEmailException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IDException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("**************************");
+		System.out.println("POKEMON: " + "pokemontype");
+		System.out.println(p1.getName() + " owned by " + p1.getOwnerName());
+		System.out.println("owner's email: " + p1.getOwnerEmail());
+		System.out.println("**************************");
 	}
 	
-public void intro(){
+public static void intro(){
 		System.out.println("#############################################################################################################");
 		System.out.println("");
 		System.out.println("Welcome to the PokéCenter! ");
@@ -21,12 +38,6 @@ public void intro(){
 		
 		//pokemonCenter.getListOfPokemon().get(0).setBoardingDate("2005/8/25");
 		
-		p1 = new Charizard("Char", "Mike", "mrgiggles@yahoo.com", "77986", 67, 6);
 		
-		System.out.println("**************************");
-		System.out.println("POKEMON: " + "pokemontype");
-		System.out.println(p1.getName() + " owned by " + p1.getOwnerName());
-		System.out.println("owner's email: " + p1.getOwnerEmail());
-		System.out.println("**************************");
 }
 }

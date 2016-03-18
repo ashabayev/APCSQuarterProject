@@ -1,5 +1,5 @@
 import java.util.Calendar;
-public class Pokemon implements Boardable{
+public abstract class Pokemon implements Boardable{
 
 	private String name, ownerName, ownerEmail;
 private double weight;
@@ -17,9 +17,10 @@ public Pokemon()
 	hp = 0;
 }
 
-public Pokemon(String name, String ownerName, String ownerEmail, String id, double Weight, int hp)
+public Pokemon(String name, String ownerName, String ownerEmail, String id, double Weight, int hp) throws IllegalEmailException, IDException
 {
   setOwnerEmail(ownerEmail);
+  setOwnerName(ownerName);
   setName(name);
   setWeight(Weight);
   setID(id);

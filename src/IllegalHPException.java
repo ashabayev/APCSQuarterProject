@@ -1,7 +1,7 @@
 
 public class IllegalHPException extends Exception{
 
-	public IllegalDateException(int i){
+	public IllegalHPException(int i){
 		super("Invalid HP");
 	}
 	
