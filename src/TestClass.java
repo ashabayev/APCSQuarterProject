@@ -2,7 +2,7 @@ import java.io.FileNotFoundException;
 
 
 public class TestClass {
-	private static Pokemon p1;
+	private static Charizard p1;
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		//PokemonCenter pc = PokemonCenter...
@@ -19,9 +19,10 @@ public class TestClass {
 		}
 		
 		System.out.println("**************************");
-		System.out.println("POKEMON: " + "pokemontype");
+		System.out.println("POKEMON: " + "Charizard");
 		System.out.println(p1.getName() + " owned by " + p1.getOwnerName());
 		System.out.println("owner's email: " + p1.getOwnerEmail());
+		System.out.println(p1.getHp() + "/" + p1.getMaxHp() + " HP");
 		System.out.println("**************************");
 	}
 	
