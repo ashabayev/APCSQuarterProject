@@ -18,5 +18,11 @@ public void intro(){
 		System.out.println("");
 		
 		pokemonCenter.getListOfPokemon().get(0).setBoardingDate("2005/8/25");
+		
+		System.out.println("**************************");
+		System.out.println("POKEMON: " + "pokemontype");
+		System.out.println(getPokemonName() + " owned by " + getOwnerName());
+		System.out.println("owner's email: " + getEmail());
+		System.out.println("**************************");
 }
 }
