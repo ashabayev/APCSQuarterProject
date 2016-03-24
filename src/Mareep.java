@@ -1,6 +1,7 @@
-public class Mareep extends Pokemon
-{
+public class Mareep extends Pokemon{
+	private int maxHP = 55;
 private boolean isClipped;
+
 public Mareep()
 {
 }
@@ -13,6 +14,11 @@ isClipped = yes;
 public boolean getClipped()
 {
 return isClipped;
+}
+
+public int getMaxHp()
+{
+	  return maxHP;
 }
 
 //not sure if this should be here. i don't think it is
