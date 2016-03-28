@@ -2,8 +2,9 @@ public class Mareep extends Pokemon{
 	private int maxHP = 55;
 private boolean isClipped;
 
-public Mareep()
+public Mareep(String name, String ownerName, String ownerEmail, String id, double weight, int hp) throws IllegalEmailException, IDException
 {
+	super(name, ownerName, ownerEmail, id, weight, hp);
 }
 
 public void setClipped(boolean yes)
