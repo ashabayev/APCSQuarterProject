@@ -26,6 +26,8 @@ public Pokemon()
 	weight = 0;
 	id = null;
 	hp = 0;
+	hospitalStart.set(2000, 4, 30);
+	hospitalEnd.set(2000, 4, 20);
 }
 
 /**
@@ -46,6 +48,9 @@ public Pokemon(String name, String ownerName, String ownerEmail, String id, doub
   setWeight(Weight);
   setID(id);
   setHp(hp);
+
+  
+  
   
 }
 //setters and getters
@@ -171,7 +176,9 @@ public String toString()
  */
 public void setBoardStart(int month, int day, int year) {
 	
-hospitalStart.set(year, month, day);
+
+ hospitalStart.set(year, month, day);
+
 
 
 }

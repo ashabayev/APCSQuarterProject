@@ -33,10 +33,10 @@ public class TestClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-		p1.setBoardStart(11,21,2005);
-		p1.setBoardEnd(12,25,2005);
-		//TODO: System.out.println("List of animals boarded on: " + pokemonCenter.getListOfPokemon().get(0).setBoardingDate("2005/8/25")); 
+		
+		p1.setBoardStart(11, 21, 2005); //TODO: check that these exceptions are caught too
+		p1.setBoardEnd(12,25, 2005);
+		//TODO: ? System.out.println("List of animals boarded on: " + pokemonCenter.getListOfPokemon().get(0).setBoardingDate("2005/8/25")); 
 
 
 		System.out.println("**************************");
@@ -58,7 +58,7 @@ public class TestClass {
 		System.out.println("owner's email: " + p3.getOwnerEmail());
 		System.out.println(p3.getHp() + "/" + p3.getMaxHp() + " HP");
 		System.out.println("Holding keys? " + p3.getHoldingKey());
-		System.out.println(p3.getKeys());
+		System.out.println("Number of keys owned: " + p3.getKeys());
 		System.out.println("**************************");
 		System.out.println("**************************");
 		System.out.println(p4.getClass().getSimpleName().toUpperCase() + ": ");
@@ -74,6 +74,8 @@ public class TestClass {
 		System.out.println(p5.getHp() + "/" + p5.getMaxHp() + " HP");
 		System.out.println("From the " + p5.getEastWest());
 		System.out.println("**************************");
+		
+		outro();
 
 	}
 
@@ -83,14 +85,18 @@ public class TestClass {
 		System.out.println("Welcome to the PokéCenter! ");
 		System.out.println("May we have your Pokémon? ");
 		System.out.println("Please bear with us while we nurse your Pokémon back to full health. ");
+		System.out.println("");
+		System.out.println("Your Pokémon have been healed. ");
+		System.out.println("You will also now return here if all your Pokémon faint at once! ");
+		System.out.println("We hope to see you again soon. ");
+	}
+	public static void outro(){
+		System.out.println("");
 		System.out.println("Your Pokémon have been healed. ");
 		System.out.println("You will also now return here if all your Pokémon faint at once! ");
 		System.out.println("We hope to see you again soon. ");
 		System.out.println("");
-
-
-
-
-
 	}
+	
+	
 }

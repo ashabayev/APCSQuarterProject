@@ -22,13 +22,13 @@ public Charizard(String name, String ownerName, String ownerEmail, String id, do
     super(name, ownerName, ownerEmail, id, weight, hp);
   }
 
-  /* (non-Javadoc)
- * @see Pokemon#toString()
- */
+/* (non-Javadoc)
+* @see Pokemon#toString()
+*/
 public String toString()
-  {
+{
 	  return null;
-  }
+}
   
   /**
  * @return
