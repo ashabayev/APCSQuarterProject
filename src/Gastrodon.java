@@ -28,7 +28,7 @@ public class Gastrodon extends Pokemon{
 	/**
 	 * @param i
 	 */
-	public void seteastWest(int i)
+	public void setEastWest(int i)
 	{
 		eastWest = i;
 	}
@@ -36,7 +36,7 @@ public class Gastrodon extends Pokemon{
 	/**
 	 * @return
 	 */
-	public int geteastWest()
+	public int getEastWest()
 	{
 		return eastWest;
 	}

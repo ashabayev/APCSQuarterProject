@@ -39,7 +39,7 @@ public class Klefki extends Pokemon{
 	/**
 	 * @return
 	 */
-	public boolean getKey()
+	public boolean getHoldingKey()
 	{
 		return isHoldingKey;
 	}
@@ -63,7 +63,7 @@ public class Klefki extends Pokemon{
 	 * @param i
 	 * @return
 	 */
-	public int getKeys(int i)
+	public int getKeys()
 	{
 		return keys;
 	}

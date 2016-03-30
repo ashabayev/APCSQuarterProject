@@ -30,7 +30,10 @@ public String toString()
 	  return null;
   }
   
-  public int getMaxHp()
+  /**
+ * @return
+ */
+public int getMaxHp()
   {
 	  return maxHP;
   }

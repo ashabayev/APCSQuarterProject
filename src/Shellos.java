@@ -27,7 +27,7 @@ public class Shellos extends Pokemon
 	/**
 	 * @param i
 	 */
-	public void seteastWest(int i)
+	public void setEastWest(int i)
 	{
 		eastWest = i;
 	}
@@ -35,7 +35,7 @@ public class Shellos extends Pokemon
 	/**
 	 * @return
 	 */
-	public int geteastWest()
+	public int getEastWest()
 	{
 		return eastWest;
 	}
