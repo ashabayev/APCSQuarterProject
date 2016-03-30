@@ -1,55 +1,100 @@
+/**
+ * @author Anna and Angelina
+ *
+ */
 public class Klefki extends Pokemon{
 
-private booleean isHoldingkey;
-private int keys;
+	private boolean isHoldingKey;
+	private int keys;
+	private int maxHP = 78;
 
-public Klefki()
-{
-}
+	/**
+	 * @param name
+	 * @param ownerName
+	 * @param ownerEmail
+	 * @param id
+	 * @param weight
+	 * @param hp
+	 * @param numKey
+	 * @param holdKey
+	 * @throws IllegalEmailException
+	 * @throws IDException
+	 */
+	public Klefki(String name, String ownerName, String ownerEmail, String id, double weight, int hp, int numKey, boolean holdKey) throws IllegalEmailException, IDException
+	{
+		super(name, ownerName, ownerEmail, id, weight, hp);
+		isHoldingKey = holdKey;
+		keys = numKey;
 
-public void setHoldingkey(boolean yes)
-{
-isHoldingkey = yes;
-}
+	}
 
-public boolean getKey()
-{
-return isHoldingkey;
-}
+	/**
+	 * @param yes
+	 */
+	public void setHoldingkey(boolean yes)
+	{
+		isHoldingKey = yes;
+	}
 
-public void setKeys(int i)
-{
-if (keys>0)
-{
-keys = i;
-}
-else
-{
-System.out.println("Please enter a positive integer");
-}
-}
+	/**
+	 * @return
+	 */
+	public boolean getKey()
+	{
+		return isHoldingKey;
+	}
 
-public void getKeys(int i)
-{
-return keys;
-}
- public void addKeys(int i)
- {
- keys += i;
- }
- 
- public void takeKeys(int i)
- {
- if (keys>i)
- {
- keys -=i;
- }
- else
- {
- System.out.println("You're taking more than it has");
- }
+	/**
+	 * @param i
+	 */
+	public void setKeys(int i)
+	{
+		if (keys>0)
+		{
+			keys = i;
+		}
+		else
+		{
+			System.out.println("Please enter a positive integer");
+		}
+	}
 
+	/**
+	 * @param i
+	 * @return
+	 */
+	public int getKeys(int i)
+	{
+		return keys;
+	}
+	/**
+	 * @param i
+	 */
+	public void addKeys(int i)
+	{
+		keys += i;
+	}
 
+	/**
+	 * @param i
+	 */
+	public void takeKeys(int i)
+	{
+		if (keys>i)
+		{
+			keys -=i;
+		}
+		else
+		{
+			System.out.println("You're taking more than it has");
+		}
+	}
 
-
+	/**
+	 * @return
+	 */
+	public int getMaxHp()
+	{
+		return maxHP;
+	}
 }
