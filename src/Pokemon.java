@@ -5,6 +5,8 @@ public abstract class Pokemon implements Boardable{
 private double weight;
 private String id;
 private int hp;
+private HospitalStart = new Calendar();
+private HospitalEnd = new Calendar();
 
 //private Date boardStart, boardEnd;
 
@@ -101,23 +103,28 @@ public String toString()
 
 
 public void setBoardStart(int month, int day, int year) {
-	private HospitalStart = new Calendar();
-hospitalLog.setMonth(Calendar.MONTH(month));
-hospitalLog.setDate(Calendar.DATE(day));
-hospitalLog.setYear(Calendar.YEAR(year));
+HospitalStart.set(int year, int month, int date)
+
+
 }
 
 
 public void setBoardEnd(int month, int day, int year) {
-	private HospitalEnd = new Calendar();
-hospitalLog.setMonth(Calendar.MONTH(month));
-hospitalLog.setDate(Calendar.DATE(day));
-hospitalLog.setYear(Calendar.YEAR(year));	
+	
+HospitalEnd.set(int year, int month, int date);	
 }
 
 public boolean boarding(int month, int day, int year) {
+	
+	HospitalCheck.set(int year, int month, int date);
+	return HospitalStart.compareTo(HospitalCheck) * HospitalCheck.compareTo(HospitalEnd) > 0;
+	
+
+
 
 	return false;
+
+}
 }
 	
 
