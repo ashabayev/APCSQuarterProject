@@ -98,4 +98,23 @@ public String toString()
 	return null;
 }
 
+
+	public void setBoardStart(int month, int day, int year) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setBoardEnd(int month, int day, int year) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean boarding(int month, int day, int year) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+
 }

@@ -5,14 +5,9 @@ import java.io.IOException;
 
 public class pokemonCenter{
 	//private static pokemonCenter...
-	private static isMade;
+	
 	public static void main(String[] args) throws IOException	
 {
-	if (isMade=true)
-	{
-		return pokemonCenter;
-	}
-	else
 		//private ArrayList<Pokemon>...
 	String fileName = "pokemonData.dat";
 	try
@@ -38,9 +33,6 @@ public class pokemonCenter{
 		fStream.close();
 
 		System.out.println("Read " + total + " bytes");
-	
-		isMade = true;
-	}
 
 
 	}
@@ -58,7 +50,7 @@ public class pokemonCenter{
 	void printPokemonBoarding(int   month, int day, year); 
 */
 }
-
+	
 	
 	
 }

@@ -9,15 +9,14 @@ public class TestClass {
 	private static Mareep p5;
 
 	public static void main(String[] args) throws FileNotFoundException {
-		//PokemonCenter pc = PokemonCenter...
 		intro();
 
 		try {
 			p1 = new Charizard("Char", "Mike", "mrgiggles@yahoo.com", "77986", 67, 6);
-			p2 = new Mareep("Horse", "Eric", "tswift@yahoo.com", "78980", 98, 9);
-			p3 = new Mareep("Stuart", "Omar", "tswift@yahoo.com", "54738", 43, 7); //TODO: change to different pokemon
-			p4 = new Mareep("Patrick", "Ari", "tswift@yahoo.com", "78980", 67, 6); //TODO: change to different pokemon
-			p5 = new Mareep("Mew", "Crystal", "tswift@yahoo.com", "78980", 67, 6); //TODO: change to different pokemon
+			p2 = new Mareep("Horse", "Eric", "tswift@yahoo.com", "78980", 98, 9, true);
+			p3 = new Mareep("Stuart", "Omar", "jbluv@yahoo.com", "54738", 43, 7, false); //TODO: change to different pokemon
+			p4 = new Mareep("Patrick", "Ari", "badger@yahoo.com", "45344", 32, 10, true); //TODO: change to different pokemon
+			p5 = new Mareep("Mew", "Crystal", "pupperoni@yahoo.com", "23432", 64, 11, false); //TODO: change to different pokemon
 
 		} catch (IllegalEmailException e) { //TODO: check that all exceptions are caught 
 			// TODO Auto-generated catch block
@@ -27,7 +26,8 @@ public class TestClass {
 			e.printStackTrace();
 		}
 
-		//TODO: methods setBoardStart() and setBoardEnd()
+		p1.setBoardStart(11,21,2005);  //TODO: is this supposed be object of p1?
+		p1.setBoardEnd(12,25,2005);
 		//TODO: System.out.println("List of animals boarded on: " + pokemonCenter.getListOfPokemon().get(0).setBoardingDate("2005/8/25")); 
 
 
@@ -42,7 +42,7 @@ public class TestClass {
 		System.out.println(p2.getName() + " owned by " + p2.getOwnerName());
 		System.out.println("owner's email: " + p2.getOwnerEmail());
 		System.out.println(p2.getHp() + "/" + p2.getMaxHp() + " HP");
-		System.out.println("stuff about getting clipped"); //TODO: mareep clip thing
+		System.out.println(p2.getClipped()); //TODO: mareep clip thing
 		System.out.println("**************************");
 		System.out.println("**************************");
 		System.out.println(p3.getClass().getSimpleName().toUpperCase() + ": ");
